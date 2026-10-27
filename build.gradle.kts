@@ -118,7 +118,7 @@ configure(mod.enabled_platforms.map { project(":$it") }) {
             val modProperties = mapOf(
                 "version" to project.version,
             )
-            filesMatching("fabric.mod.json") { expand(modProperties) }
+
             filesMatching("META-INF/mods.toml") { expand(modProperties) }
 
             if (privateBuild) {
