@@ -11,9 +11,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(InteractKeyTextOverlay.class)
+@Mixin(value = InteractKeyTextOverlay.class, remap = false)
 public abstract class InteractKeyTextOverlayMixin {
-    @Inject(remap = false, method = "renderText", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "renderText", at = @At("HEAD"), cancellable = true)
     private static void renderText(GuiGraphics graphics, int width, int height, Font font, String keyName, Component subtitle, CallbackInfo ci) {
         TaCZJSUtils.getClientGun(Minecraft.getInstance().player).ifPresent(gun -> {
             if (gun.isVanillaInteract()) ci.cancel();
