@@ -11,6 +11,7 @@
     "client.ClientIndexManagerMixin",
     "client.ClientPreventGunClickMixin",
     "client.GunItemBuilderMixin",
+    "client.v1026_094236.InteractKeyTextOverlayMixin",
     "client.InteractKeyTextOverlayMixin",
     "client.LocalPlayerAimMixin",
     "client.LocalPlayerMeleeMixin",
@@ -20,8 +21,6 @@
     "client.v118.ClientIndexManagerMixin"
   ],
   "mixins": [
-    "client.v118.InteractKeyTextOverlayMixin",
-    "client.v1026_094236.InteractKeyTextOverlayMixin",
     "crafting.RecipeManagerMixin",
     "resource.manager.CommonDataManagerMixin",
     "shooter.LivingEntityAimMixin",
