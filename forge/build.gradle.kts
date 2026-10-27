@@ -25,7 +25,9 @@ dependencies {
 
     localRuntime(libs.forge.mixinextras)
 
-    modImplementation(libs.forge.tacz)
+    modImplementation(files(file("lib/tacz-1.20.1-1026-094236-all.jar")))
+
+    //modImplementation(libs.forge.tacz)
     modImplementation(libs.forge.kubejs)
 
     forgeRuntimeLibrary(libs.commons.math3)

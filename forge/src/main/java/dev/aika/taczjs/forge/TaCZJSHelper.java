@@ -16,7 +16,7 @@ import dev.aika.taczjs.forge.events.index.AttachmentIndexLoadEvent;
 import dev.aika.taczjs.forge.events.index.GunIndexLoadEvent;
 import net.minecraft.resources.ResourceLocation;
 
-public class TaCZJSHelper {
+public class  TaCZJSHelper {
     public static final String GunSmithTableRecipeType = ModRecipe.GUN_SMITH_TABLE_CRAFTING.getId().toString();
 
     public static JsonObject toJsonObject(String json) {

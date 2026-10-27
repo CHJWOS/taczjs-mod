@@ -12,6 +12,7 @@ declare class TaCZJSUtils {
     static getRecipe(recipeId: ResourceLocation): GunSmithTableRecipe;
 }
 
+// @ts-ignore
 enum AnimationPlayType {
     PLAY_ONCE_HOLD,
     PLAY_ONCE_STOP,

@@ -21,6 +21,7 @@
   ],
   "mixins": [
     "client.v118.InteractKeyTextOverlayMixin",
+    "client.v1026_094236.InteractKeyTextOverlayMixin",
     "crafting.RecipeManagerMixin",
     "resource.manager.CommonDataManagerMixin",
     "shooter.LivingEntityAimMixin",
